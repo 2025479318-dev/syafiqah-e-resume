@@ -25,7 +25,7 @@
             transition: color 0.3s;
         }
         .contact-item a:hover {
-            color: #bfa182; 
+            color: #bfa182; /* Matches your accent golden-tan color */
         }
         .map-section {
             margin-top: 50px;
@@ -34,6 +34,8 @@
             overflow: hidden;
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
         }
+
+        /* --- BEAUTIFUL POP-UP MODAL STYLES --- */
         .success-modal {
             display: none;
             position: fixed;
@@ -42,8 +44,8 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(15, 23, 42, 0.7); 
-            backdrop-filter: blur(5px); 
+            background-color: rgba(15, 23, 42, 0.7); /* Luxury dark navy backdrop */
+            backdrop-filter: blur(5px); /* Soft glass blur effect */
             justify-content: center;
             align-items: center;
             opacity: 0;
@@ -71,7 +73,7 @@
             width: 70px;
             height: 70px;
             background-color: #faf7f2;
-            color: #bfa182; 
+            color: #bfa182; /* Theme Gold */
             border-radius: 50%;
             display: flex;
             justify-content: center;
@@ -117,13 +119,13 @@
 
 <header>
     <div class="header-left">
-        <img src="image/logo/sn-logo.png" alt="Profile logo" class="header-profile">
+        <img src="image/logo/sn logo.png" alt="Profile logo" class="header-profile">
         <div class="header-title">
             <h1>SYAFIQAH NAZIR</h1>
             <p>E-RESUME</p>
         </div>
     </div>
-<div class="header-right">
+    <div class="header-right">
         <a href="tel:+601116365920"><i class="fa-solid fa-phone"></i></a>
         <a href="mailto:piqahnazir@gmail.com"><i class="fa-solid fa-envelope"></i></a>
         <a href="https://www.linkedin.com/in/syafiqah-nazir-9666a235a" target="_blank">
@@ -241,14 +243,16 @@
     const successModal = document.getElementById('successModal');
 
     contactForm.addEventListener('submit', function(event) {
-
+        // Prevent default static page refresh 
         event.preventDefault();
 
+        // Reveal the beautiful polished modal container
         successModal.style.display = 'flex';
         setTimeout(() => {
             successModal.classList.add('show');
-        }, 10); 
+        }, 10); // Tiny timeout handles smooth CSS fade-in
 
+        // Clear your layout inputs safely
         contactForm.reset();
     });
 
@@ -256,8 +260,10 @@
         successModal.classList.remove('show');
         setTimeout(() => {
             successModal.style.display = 'none';
-        }, 400); 
+        }, 400); // Matches the smooth transition length
+    }
 
+    // Close window if recruiter clicks backdrop space outside the container box
     window.onclick = function(event) {
         if (event.target == successModal) {
             closeSuccessModal();
