@@ -62,5 +62,5 @@ Simply double-click index.html inside your root directory to open it locally ins
 Let's connect! I am always open to exploring professional opportunities, collaborations, and conversations.
 
 Email: piqahnazir@gmail.com
-LinkedIn: Syafiqah Nazir
-Phone: +601116365920
+LinkedIn: (https://www.linkedin.com/in/syafiqah-nazir-9666a235a)
+Phone: 011-16365920
