@@ -49,11 +49,11 @@ syafiqah-e-resume/
 ## 💻 Local Setup & Development
 To clone and run this repository locally:
 
-# Clone the repository:
+Clone the repository:
 Bash
 git clone [https://github.com/2025479318-dev/syafiqah-e-resume.git](https://github.com/2025479318-dev/syafiqah-e-resume.git)
 
-# Launch the site:
+Launch the site:
 Simply double-click index.html inside your root directory to open it locally inside your preferred browser.
 
 ---
