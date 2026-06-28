@@ -25,7 +25,7 @@
             transition: color 0.3s;
         }
         .contact-item a:hover {
-            color: #bfa182; /* Matches your accent golden-tan color */
+            color: #bfa182; 
         }
         .map-section {
             margin-top: 50px;
@@ -34,8 +34,6 @@
             overflow: hidden;
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
         }
-
-        /* --- BEAUTIFUL POP-UP MODAL STYLES --- */
         .success-modal {
             display: none;
             position: fixed;
@@ -44,8 +42,8 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(15, 23, 42, 0.7); /* Luxury dark navy backdrop */
-            backdrop-filter: blur(5px); /* Soft glass blur effect */
+            background-color: rgba(15, 23, 42, 0.7); 
+            backdrop-filter: blur(5px); 
             justify-content: center;
             align-items: center;
             opacity: 0;
@@ -73,7 +71,7 @@
             width: 70px;
             height: 70px;
             background-color: #faf7f2;
-            color: #bfa182; /* Theme Gold */
+            color: #bfa182; 
             border-radius: 50%;
             display: flex;
             justify-content: center;
@@ -243,16 +241,14 @@
     const successModal = document.getElementById('successModal');
 
     contactForm.addEventListener('submit', function(event) {
-        // Prevent default static page refresh 
+
         event.preventDefault();
 
-        // Reveal the beautiful polished modal container
         successModal.style.display = 'flex';
         setTimeout(() => {
             successModal.classList.add('show');
-        }, 10); // Tiny timeout handles smooth CSS fade-in
+        }, 10); 
 
-        // Clear your layout inputs safely
         contactForm.reset();
     });
 
@@ -260,10 +256,8 @@
         successModal.classList.remove('show');
         setTimeout(() => {
             successModal.style.display = 'none';
-        }, 400); // Matches the smooth transition length
-    }
+        }, 400); 
 
-    // Close window if recruiter clicks backdrop space outside the container box
     window.onclick = function(event) {
         if (event.target == successModal) {
             closeSuccessModal();
