@@ -44,6 +44,8 @@ syafiqah-e-resume/
 ├── student.html           # Detailed student portal layout
 └── README.md              # Project documentation
 
+```
+
 💻 Local Setup & Development
 To clone and run this repository locally:
 
