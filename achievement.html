@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Achievements | Syafiqah</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+    .view-cert-btn{
+    display:inline-block;
+    margin-top:12px;
+    color:#bfa182;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.view-cert-btn:hover{
+    color:#1f3a5f;
+}
+
+.view-cert-btn i{
+    margin-right:6px;
+}
+
+.cert-modal{
+    display:none;
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.8);
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.modal-content{
+    max-width:80%;
+    max-height:80%;
+    border-radius:10px;
+}
+
+.close-modal{
+    position:absolute;
+    top:20px;
+    right:40px;
+    color:#fff;
+    font-size:40px;
+    cursor:pointer;
+}
+</style>
+
+</head>
+
+<body id="top">
+
+<!-- HEADER -->
+
+<header>
+    <div class="header-left">
+        <a href="student.html">
+            <img src="image/logo/sn logo.png" 
+                 alt="Profile logo" 
+                 class="header-profile">
+        </a>
+        <div class="header-title">
+            <h1>SYAFIQAH NAZIR</h1>
+            <p>E-RESUME</p>
+        </div>
+    </div>
+
+    <div class="header-right">
+
+        <a href="tel:+601116365920">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+
+        <a href="mailto:piqahnazir@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/syafiqah-nazir-9666a235a"
+           target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+    </div>
+
+</header>
+
+<!-- NAVIGATION -->
+
+<nav>
+
+    <ul>
+
+        <li><a href="index.html">HOME</a></li>
+
+        <li><a href="about.html">ABOUT</a></li>
+
+        <li><a href="education.html">EDUCATION</a></li>
+
+        <li><a href="skills.html">SKILLS</a></li>
+
+        <li><a href="experience.html">EXPERIENCE</a></li>
+
+        <li><a href="achievement.html">ACHIEVEMENTS</a></li>
+
+        <li><a href="gallery.html">GALLERY</a></li>
+
+        <li><a href="contact.html">CONTACT</a></li>
+
+    </ul>
+    
+</nav>
+
+<!-- ACHIEVEMENTS -->
+<main>
+
+<section class="achievement-page">
+
+    <h2>ACHIEVEMENTS</h2>
+
+   <div class="achievement-gallery">
+
+    <div class="award-card">
+
+        <i class="fa-solid fa-trophy"></i>
+
+        <h3>Champion in Drama Competition</h3>
+
+        <p>
+            Won first place in a school drama competition,
+            demonstrating creativity, confidence, and teamwork.
+        </p>
+
+         <span class="view-cert-btn"
+        onclick="openModal('image/certificate/LAKONAN.JPG')">
+        View Certificate
+
+    </span>
+    </div>
+
+    <div class="award-card">
+
+        <i class="fa-solid fa-language"></i>
+
+        <h3>Language Seminar Certificate</h3>
+
+        <p>
+            Participated in a language development seminar
+            to improve communication and presentation skills.
+        </p>
+
+         <span class="view-cert-btn"
+        onclick="openModal('image/certificate/bahasa.jpg')">
+        View Certificate
+
+    </span>
+    </div>
+
+    <div class="award-card">
+
+        <i class="fa-solid fa-certificate"></i>
+
+        <h3>Practical Work Assessment</h3>
+
+        <p>
+            Successfully completed practical work assessment
+            and fulfilled all required competencies.
+        </p>
+
+         <span class="view-cert-btn"
+        onclick="openModal('image/certificate/PEKA.JPG')">
+
+        View Certificate
+
+    </span>
+    </div>
+
+    <div class="award-card">
+
+        <i class="fa-solid fa-campground"></i>
+
+        <h3>Leadership Camp Certificate</h3>
+
+        <p>
+            Completed leadership camp activities and developed
+            teamwork, leadership, and problem-solving skills.
+        </p>
+
+         <span class="view-cert-btn"
+        onclick="openModal('image/certificate/KEM.JPG')">
+
+        View Certificate
+
+    </span>
+    </div>
+
+    <div class="award-card">
+
+        <i class="fa-solid fa-certificate"></i>
+
+<h3>Professional Development Course</h3>
+
+<p>
+    Completed a career development programme that enhanced
+    professional awareness, goal setting, and preparation for
+    future employment opportunities.
+</p>
+
+<span class="view-cert-btn"
+onclick="openModal('image/certificate/zus.jpg')">
+
+    View Certificate
+
+</span>
+    </div>
+
+    <div class="award-card">
+
+    <i class="fa-solid fa-award"></i>
+
+    <h3>Academic Excellence Award</h3>
+
+    <p>
+        Recognised for consistent academic commitment,
+        active participation, and personal development.
+    </p>
+
+     <span class="view-cert-btn"
+        onclick="openModal('image/certificate/KOKO.JPG')">
+
+        View Certificate
+
+    </span>
+    </div>
+
+</div>
+
+</section>
+
+</main>
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <p>
+            © 2026 Syafiqah Nazir. All Rights Reserved.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="#top" class="back-top">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+<div id="imageModal" class="cert-modal" onclick="closeModal()">
+
+    <span class="close-modal">&times;</span>
+
+    <img class="modal-content" id="modalImg" alt="Certificate">
+
+</div>
+<script>
+
+function openModal(imageSrc){
+
+    document.getElementById("imageModal").style.display = "flex";
+    document.getElementById("modalImg").src = imageSrc;
+
+}
+
+function closeModal(){
+
+    document.getElementById("imageModal").style.display = "none";
+
+}
+
+</script>
+</body>
+</html>

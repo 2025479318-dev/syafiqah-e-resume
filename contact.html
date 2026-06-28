@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Syafiqah</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .contact-subtitle {
+            text-align: center;
+            color: #777;
+            margin-top: -10px;
+            margin-bottom: 40px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.1rem;
+        }
+        .contact-item a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .contact-item a:hover {
+            color: #bfa182; /* Matches your accent golden-tan color */
+        }
+        .map-section {
+            margin-top: 50px;
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        /* --- BEAUTIFUL POP-UP MODAL STYLES --- */
+        .success-modal {
+            display: none;
+            position: fixed;
+            z-index: 10000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(15, 23, 42, 0.7); /* Luxury dark navy backdrop */
+            backdrop-filter: blur(5px); /* Soft glass blur effect */
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+        .success-modal.show {
+            display: flex;
+            opacity: 1;
+        }
+        .success-modal-content {
+            background-color: #ffffff;
+            padding: 40px 30px;
+            border-radius: 16px;
+            max-width: 450px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            transform: scale(0.8);
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .success-modal.show .success-modal-content {
+            transform: scale(1);
+        }
+        .success-icon-box {
+            width: 70px;
+            height: 70px;
+            background-color: #faf7f2;
+            color: #bfa182; /* Theme Gold */
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            margin: 0 auto 20px auto;
+            box-shadow: 0 4px 10px rgba(191, 161, 130, 0.2);
+        }
+        .success-modal-content h3 {
+            font-family: 'Playfair Display', serif;
+            color: #111;
+            font-size: 1.6rem;
+            margin-bottom: 12px;
+        }
+        .success-modal-content p {
+            font-family: 'Poppins', sans-serif;
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+        .success-close-btn {
+            background-color: #bfa182;
+            color: #fff;
+            border: none;
+            padding: 10px 30px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+        }
+        .success-close-btn:hover {
+            background-color: #a38568;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body id="top">
+
+<header>
+    <div class="header-left">
+        <img src="image/logo/sn logo.png" alt="Profile logo" class="header-profile">
+        <div class="header-title">
+            <h1>SYAFIQAH NAZIR</h1>
+            <p>E-RESUME</p>
+        </div>
+    </div>
+<div class="header-right">
+        <a href="tel:+601116365920"><i class="fa-solid fa-phone"></i></a>
+        <a href="mailto:piqahnazir@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/syafiqah-nazir-9666a235a" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="education.html">EDUCATION</a></li>
+        <li><a href="skills.html">SKILLS</a></li>
+        <li><a href="experience.html">EXPERIENCE</a></li>
+        <li><a href="achievement.html">ACHIEVEMENTS</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+</nav>
+
+<main>
+<section class="contact-page">
+    <h2>CONTACT ME</h2>
+    <p class="contact-subtitle">Let's connect! Whether you have a job opportunity or just want to say hello, feel free to reach out.</p>
+
+    <div class="contact-container">
+        <div class="contact-info contact-new-design">
+            
+            <div class="info-metric-card">
+                <i class="fa-solid fa-envelope info-metric-icon"></i>
+                <div class="info-metric-details">
+                    <span class="info-metric-label">EMAIL ME</span>
+                    <h4 class="info-metric-value"><a href="mailto:piqahnazir@gmail.com">piqahnazir@gmail.com</a></h4>
+                </div>
+            </div>
+
+            <div class="info-metric-card">
+                <i class="fa-solid fa-phone info-metric-icon"></i>
+                <div class="info-metric-details">
+                    <span class="info-metric-label">CALL / WHATSAPP</span>
+                    <h4 class="info-metric-value"><a href="tel:+601116365920">+6011-1636 5920</a></h4>
+                </div>
+            </div>
+
+            <div class="info-metric-card">
+                <i class="fa-solid fa-location-dot info-metric-icon"></i>
+                <div class="info-metric-details">
+                    <span class="info-metric-label">LOCATION</span>
+                    <h4 class="info-metric-value">Selangor, Malaysia</h4>
+                </div>
+            </div>
+
+            <div class="info-metric-card">
+                <i class="fa-brands fa-linkedin info-metric-icon"></i>
+                <div class="info-metric-details">
+                    <span class="info-metric-label">LINKEDIN</span>
+                    <h4 class="info-metric-value"><a href="https://www.linkedin.com/in/syafiqah-nazir-9666a235a" target="_blank">syafiqah-nazir</a></h4>
+                </div>
+            </div>
+
+        </div>
+
+       <div class="contact-form contact-new-form-design">
+            <form id="contactForm">
+                <div class="form-group-custom">
+                    <input type="text" id="name" placeholder=" " required>
+                    <label for="name">Your Name</label>
+                    <span class="form-line-accent"></span>
+                </div>
+
+                <div class="form-group-custom">
+                    <input type="email" id="email" placeholder=" " required>
+                    <label for="email">Your Email</label>
+                    <span class="form-line-accent"></span>
+                </div>
+
+                <div class="form-group-custom">
+                    <textarea id="message" rows="5" placeholder=" " required></textarea>
+                    <label for="message">Your Message</label>
+                    <span class="form-line-accent"></span>
+                </div>
+
+                <button type="submit" class="btn-submit-modern">
+                    <span>Send Message</span>
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+</main>
+<div id="successModal" class="success-modal">
+    <div class="success-modal-content">
+        <div class="success-icon-box">
+            <i class="fa-solid fa-paper-plane"></i>
+        </div>
+        <h3>Message Sent!</h3>
+        <p>Thank you for sending me a message. I will get to you as soon as possible!</p>
+        <button class="success-close-btn" onclick="closeSuccessModal()">CLOSE</button>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <p>© 2026 Syafiqah Nazir. All Rights Reserved.</p>
+        <div class="footer-links">
+            <a href="#top" class="back-top"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const contactForm = document.getElementById('contactForm');
+    const successModal = document.getElementById('successModal');
+
+    contactForm.addEventListener('submit', function(event) {
+        // Prevent default static page refresh 
+        event.preventDefault();
+
+        // Reveal the beautiful polished modal container
+        successModal.style.display = 'flex';
+        setTimeout(() => {
+            successModal.classList.add('show');
+        }, 10); // Tiny timeout handles smooth CSS fade-in
+
+        // Clear your layout inputs safely
+        contactForm.reset();
+    });
+
+    function closeSuccessModal() {
+        successModal.classList.remove('show');
+        setTimeout(() => {
+            successModal.style.display = 'none';
+        }, 400); // Matches the smooth transition length
+    }
+
+    // Close window if recruiter clicks backdrop space outside the container box
+    window.onclick = function(event) {
+        if (event.target == successModal) {
+            closeSuccessModal();
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details | Syafiqah</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ebdcb9; /* Your exact beige background color */
+            color: #333333;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 750px;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+            box-sizing: border-box;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            color: #1a365d; /* Elegant deep blue to match your footer theme */
+            font-size: 2rem;
+            margin-top: 0;
+            margin-bottom: 30px;
+            text-align: center;
+            letter-spacing: 1px;
+            border-bottom: 2px solid #ebdcb9;
+            padding-bottom: 15px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        tr {
+            transition: background-color 0.2s ease;
+        }
+
+        tr:hover {
+            background-color: #faf7f0; /* Subtle hover effect for readability */
+        }
+
+        th, td {
+            padding: 14px 16px;
+            border-bottom: 1px solid #f0eae0;
+            font-size: 0.95rem;
+            vertical-align: middle;
+        }
+
+        th {
+            font-weight: 600;
+            color: #1a365d;
+            text-align: left;
+            width: 35%;
+        }
+
+        td {
+            color: #555555;
+            font-weight: 400;
+        }
+
+        a {
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: #1a365d;
+            text-decoration: underline;
+        }
+
+        .student-image {
+            width: 120px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            display: block;
+        }
+
+        .back-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #1a365d;
+            font-weight: 500;
+            font-size: 0.95rem;
+            margin-top: 10px;
+        }
+
+        .back-home:hover {
+            color: #0056b3;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>STUDENT DETAILS</h2>
+        
+        <table>
+            <tr>
+                <th>Title:</th>
+                <td>Syafiqah Resume</td>
+            </tr>
+            <tr>
+                <th>Name:</th>
+                <td>Wan Nur Syafiqah Binti Wan Nazir</td>
+            </tr>
+            <tr>
+                <th>Student ID:</th>
+                <td>2025479318</td>
+            </tr>
+            <tr>
+                <th>Group:</th>
+                <td>SI2622B</td>
+            </tr>
+            <tr>
+                <th>Course Code:</th>
+                <td>IMS458</td>
+            </tr>
+            <tr>
+                <th>Course Name:</th>
+                <td>Web Design and Development</td>
+            </tr>
+            <tr>
+                <th>Program Code:</th>
+                <td>SI262</td>
+            </tr>
+            <tr>
+                <th>Faculty:</th>
+                <td>Faculty of Information Science</td>
+            </tr>
+            <tr>
+                <th>Submission Date:</th>
+                <td>26 June 2026</td>
+            </tr>
+            <tr>
+                <th>Published URL:</th>
+                <td><a href="https://2025479318-dev.github.io/syafiqah-e-resume/" target="_blank">My Website Link</a></td>
+            </tr>
+            <tr>
+                <th>My Image:</th>
+                <td>
+                    <img src="image/profile/profilepic.JPG" alt="Syafiqah Profile Picture" class="student-image">
+                </td>
+            </tr>
+        </table>
+        
+        <a href="index.html" class="back-home">
+            <i class="fa-solid fa-arrow-left"></i> Back to Home
+        </a>
+    </div>
+
+</body>
+</html>
