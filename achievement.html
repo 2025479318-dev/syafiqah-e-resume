@@ -85,9 +85,28 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
     <div class="header-right">
 
-        <a href="tel:+601116365920">
+        <div class="phone-container" style="position: relative; display: inline-block;">
+        <a href="#" id="phone-copy-btn" title="Click to copy phone number">
             <i class="fa-solid fa-phone"></i>
         </a>
+        <div id="copy-popup" style="
+            display: none; 
+            position: absolute; 
+            top: 35px; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            background-color: #333; 
+            color: #fff; 
+            padding: 6px 12px; 
+            border-radius: 4px; 
+            font-size: 13px; 
+            white-space: nowrap; 
+            z-index: 100;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+            font-family: 'Poppins', sans-serif;">
+            011-16365920 copied!
+        </div>
+    </div>
 
         <a href="mailto:piqahnazir@gmail.com">
             <i class="fa-solid fa-envelope"></i>
@@ -294,6 +313,27 @@ function closeModal(){
 
 }
 
+document.getElementById('phone-copy-btn').addEventListener('click', function(e) {
+    e.preventDefault(); // Stops the page from jumping or dialing
+    
+    const phoneNumber = "011-16365920";
+    
+    // Copies the number to the clipboard
+    navigator.clipboard.writeText(phoneNumber).then(() => {
+        const popup = document.getElementById('copy-popup');
+        
+        // Show the pop-up
+        popup.style.display = 'block';
+        
+        // Hide the pop-up automatically after 2.5 seconds
+        setTimeout(() => {
+            popup.style.display = 'none';
+        }, 2500);
+    }).catch(err => {
+        console.error('Could not copy text: ', err);
+    });
+});
+    
 </script>
 </body>
 </html>
