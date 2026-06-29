@@ -300,18 +300,15 @@
     }
 
     document.getElementById('phone-copy-btn').addEventListener('click', function(e) {
-    e.preventDefault(); // Stops the page from jumping or dialing
+    e.preventDefault();
     
     const phoneNumber = "011-16365920";
     
-    // Copies the number to the clipboard
     navigator.clipboard.writeText(phoneNumber).then(() => {
         const popup = document.getElementById('copy-popup');
         
-        // Show the pop-up
         popup.style.display = 'block';
         
-        // Hide the pop-up automatically after 2.5 seconds
         setTimeout(() => {
             popup.style.display = 'none';
         }, 2500);
