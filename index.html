@@ -31,10 +31,28 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
     <div class="header-right">
 
-    <a href="#" id="phone-copy-btn" data-phone="+601116365920" title="Click to copy phone number">
-    <i class="fa-solid fa-phone"></i>
-    <span id="copy-toast" style="display:none; margin-left: 5px; font-size: 12px; color: #4CAF50;">Copied!</span>
-</a>
+    <div class="phone-container" style="position: relative; display: inline-block;">
+        <a href="#" id="phone-copy-btn" title="Click to copy phone number">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+        <div id="copy-popup" style="
+            display: none; 
+            position: absolute; 
+            top: 35px; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            background-color: #333; 
+            color: #fff; 
+            padding: 6px 12px; 
+            border-radius: 4px; 
+            font-size: 13px; 
+            white-space: nowrap; 
+            z-index: 100;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+            font-family: 'Poppins', sans-serif;">
+            011-16365920 copied!
+        </div>
+    </div>
 
     <a href="mailto:piqahnazir@gmail.com">
         <i class="fa-solid fa-envelope"></i>
@@ -132,26 +150,25 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
 <script>
 document.getElementById('phone-copy-btn').addEventListener('click', function(e) {
-    e.preventDefault(); // Prevents the page from jumping or trying to make a call
+    e.preventDefault();
     
-    // Get the phone number from the data attribute
-    const phoneNumber = this.getAttribute('data-phone');
+    const phoneNumber = "011-16365920";
     
-    // Copy to clipboard
     navigator.clipboard.writeText(phoneNumber).then(() => {
-        // Show the "Copied!" text
-        const toast = document.getElementById('copy-toast');
-        toast.style.display = 'inline';
+        const popup = document.getElementById('copy-popup');
         
-        // Hide it again after 2 seconds
+        popup.style.display = 'block';
+        
         setTimeout(() => {
-            toast.style.display = 'none';
-        }, 2000);
+            popup.style.display = 'none';
+        }, 2500);
     }).catch(err => {
-        console.error('Failed to copy: ', err);
+        console.error('Could not copy text: ', err);
     });
 });
 </script>
+    
+</body>
     
 <footer>
 
