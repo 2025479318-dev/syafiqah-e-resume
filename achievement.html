@@ -85,7 +85,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
     <div class="header-right">
 
-        <div class="phone-container" style="position: relative; display: inline-block;">
+    <div class="phone-container" style="position: relative; display: inline-block;">
         <a href="#" id="phone-copy-btn" title="Click to copy phone number">
             <i class="fa-solid fa-phone"></i>
         </a>
@@ -312,9 +312,11 @@ function closeModal(){
     document.getElementById("imageModal").style.display = "none";
 
 }
-
+</script>
+    
+<script>
 document.getElementById('phone-copy-btn').addEventListener('click', function(e) {
-    e.preventDefault(); 
+    e.preventDefault();
     
     const phoneNumber = "011-16365920";
     
@@ -322,7 +324,7 @@ document.getElementById('phone-copy-btn').addEventListener('click', function(e) 
         const popup = document.getElementById('copy-popup');
         
         popup.style.display = 'block';
-
+        
         setTimeout(() => {
             popup.style.display = 'none';
         }, 2500);
@@ -330,7 +332,7 @@ document.getElementById('phone-copy-btn').addEventListener('click', function(e) 
         console.error('Could not copy text: ', err);
     });
 });
-    
 </script>
+
 </body>
 </html>
